@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Insurance Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Insurance Application Form</header>
+      <div class="tab-buttons">
+        <a class="tab-button" href="index.html">Insurance Form</a>
+        <a class="tab-button" href="AboutUs.html">About Us</a>
+        <a class="tab-button" href="contactUs.html">Contact Us</a>
+      </div>
+      <form
+        class="form"
+        method="post"
+        enctype="application/x-www-form-urlencoded"
+        action="/html/codes/html_form_handler.cfm"
+      >
+        <!--personal info-->
+        <div class="form-data">
+          <label>Full name</label>
+          <input
+            placeholder="Enter full name"
+            type="text"
+            name="name"
+            id="name"
+            required
+          />
+        </div>
+
+        <div class="radio-box">
+          <label>Gender</label>
+          <div class="radio-option">
+            <div class="radio-value">
+              <input type="radio" id="check-male" name="gender" /><label
+                for="check-male"
+                >Male</label
+              >
+            </div>
+
+            <div class="radio-value">
+              <input type="radio" id="check-female" name="gender" /><label
+                for="check-female"
+                >Female</label
+              >
+            </div>
+
+            <div class="radio-value">
+              <input type="radio" id="check-other" name="gender" /><label
+                for="check-other"
+                >Prefer not to say</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="form-data">
+            <label>Phone Number</label
+            ><input
+              placeholder="Enter phone number"
+              type="tel"
+              name="phonenumber"
+              id="phonenumber"
+              required
+            />
+          </div>
+          <div class="form-data">
+            <label>Email</label
+            ><input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter email address"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-data">
+          <label>Date of Birth</label
+          ><input
+            placeholder="DD/MM/YYYY"
+            type="date"
+            name="dob"
+            id="dob"
+            required
+          />
+        </div>
+        <div class="column">
+          <div class="form-data">
+            <label>Height</label
+            ><input
+              type="text"
+              id="user_height"
+              name="user_height"
+              placeholder="Enter height"
+              required
+            />
+          </div>
+          <div class="form-data">
+            <label>Weight</label
+            ><input
+              type="text"
+              id="user_weight"
+              name="user_weight"
+              placeholder="Enter weight"
+              required
+            />
+          </div>
+        </div>
+
+        <!--address info-->
+        <div class="form-data">
+          <label>Address</label>
+          <input
+            placeholder="Street Address line 1"
+            type="text"
+            name="address"
+            id="address"
+            required
+          />
+          <input
+            placeholder="Street Address line 2 (optional)"
+            type="text"
+            name="address2"
+            id="address2"
+          />
+        </div>
+        <div class="column">
+          <div class="form-data">
+            <input
+              placeholder="Enter your city"
+              type="text"
+              name="city"
+              id="city"
+              required
+            />
+          </div>
+          <div class="form-data">
+            <input
+              placeholder="Enter your region"
+              type="text"
+              name="region"
+              id="region"
+              required
+            />
+          </div>
+        </div>
+        <div class="column">
+          <div class="form-data">
+            <div class="select-box">
+              <select>
+                <option hidden>Country</option>
+                <option>Afghanistan</option>
+                <option>Albania</option>
+                <option>Algeria</option>
+                <option>Andorra</option>
+                <option>Angola</option>
+                <option>Antigua and Barbuda</option>
+                <option>Argentina</option>
+                <option>Armenia</option>
+                <option>Australia</option>
+                <option>Austria</option>
+                <option>Azerbaijan</option>
+                <option>Bahamas</option>
+                <option>Bahrain</option>
+                <option>Bangladesh</option>
+                <option>Barbados</option>
+                <option>Belarus</option>
+                <option>Belgium</option>
+                <option>Belize</option>
+                <option>Benin</option>
+                <option>Bhutan</option>
+                <option>Bolivia</option>
+                <option>Bosnia and Herzegovina</option>
+                <option>Botswana</option>
+                <option>Brazil</option>
+                <option>Brunei</option>
+                <option>Bulgaria</option>
+                <option>Burkina Faso</option>
+                <option>Burundi</option>
+                <option>Cabo Verde</option>
+                <option>Cambodia</option>
+                <option>Cameroon</option>
+                <option>Canada</option>
+                <option>Central African Republic</option>
+                <option>Chad</option>
+                <option>Chile</option>
+                <option>China</option>
+                <option>Colombia</option>
+                <option>Comoros</option>
+                <option>Congo, Democratic Republic of the</option>
+                <option>Congo, Republic of the</option>
+                <option>Costa Rica</option>
+                <option>Croatia</option>
+                <option>Cuba</option>
+                <option>Cyprus</option>
+                <option>Czech Republic</option>
+                <option>Denmark</option>
+                <option>Djibouti</option>
+                <option>Dominica</option>
+                <option>Dominican Republic</option>
+                <option>Ecuador</option>
+                <option>Egypt</option>
+                <option>El Salvador</option>
+                <option>Equatorial Guinea</option>
+                <option>Eritrea</option>
+                <option>Estonia</option>
+                <option>Eswatini</option>
+                <option>Ethiopia</option>
+                <option>Fiji</option>
+                <option>Finland</option>
+                <option>France</option>
+                <option>Gabon</option>
+                <option>Gambia</option>
+                <option>Georgia</option>
+                <option>Germany</option>
+                <option>Ghana</option>
+                <option>Greece</option>
+                <option>Grenada</option>
+                <option>Guatemala</option>
+                <option>Guinea</option>
+                <option>Guinea-Bissau</option>
+                <option>Guyana</option>
+                <option>Haiti</option>
+                <option>Honduras</option>
+                <option>Hungary</option>
+                <option>Iceland</option>
+                <option>India</option>
+                <option>Indonesia</option>
+                <option>Iran</option>
+                <option>Iraq</option>
+                <option>Ireland</option>
+                <option>Israel</option>
+                <option>Italy</option>
+                <option>Jamaica</option>
+                <option>Japan</option>
+                <option>Jordan</option>
+                <option>Kazakhstan</option>
+                <option>Kenya</option>
+                <option>Kiribati</option>
+                <option>Korea, North</option>
+                <option>Korea, South</option>
+                <option>Kosovo</option>
+                <option>Kuwait</option>
+                <option>Kyrgyzstan</option>
+                <option>Laos</option>
+                <option>Latvia</option>
+                <option>Lebanon</option>
+                <option>Lesotho</option>
+                <option>Liberia</option>
+                <option>Libya</option>
+                <option>Liechtenstein</option>
+                <option>Lithuania</option>
+                <option>Luxembourg</option>
+                <option>Madagascar</option>
+                <option>Malawi</option>
+                <option>Malaysia</option>
+                <option>Maldives</option>
+                <option>Mali</option>
+                <option>Malta</option>
+                <option>Marshall Islands</option>
+                <option>Mauritania</option>
+                <option>Mauritius</option>
+                <option>Mexico</option>
+                <option>Micronesia</option>
+                <option>Moldova</option>
+                <option>Monaco</option>
+                <option>Mongolia</option>
+                <option>Montenegro</option>
+                <option>Morocco</option>
+                <option>Mozambique</option>
+                <option>Myanmar (Burma)</option>
+                <option>Namibia</option>
+                <option>Nauru</option>
+                <option>Nepal</option>
+                <option>Netherlands</option>
+                <option>New Zealand</option>
+                <option>Nicaragua</option>
+                <option>Niger</option>
+                <option>Nigeria</option>
+                <option>North Macedonia</option>
+                <option>Norway</option>
+                <option>Oman</option>
+                <option>Pakistan</option>
+                <option>Palau</option>
+                <option>Palestine</option>
+                <option>Panama</option>
+                <option>Papua New Guinea</option>
+                <option>Paraguay</option>
+                <option>Peru</option>
+                <option>Philippines</option>
+                <option>Poland</option>
+                <option>Portugal</option>
+                <option>Qatar</option>
+                <option>Romania</option>
+                <option>Russia</option>
+                <option>Rwanda</option>
+                <option>Saint Kitts and Nevis</option>
+                <option>Saint Lucia</option>
+                <option>Saint Vincent and the Grenadines</option>
+                <option>Samoa</option>
+                <option>San Marino</option>
+                <option>Sao Tome and Principe</option>
+                <option>Saudi Arabia</option>
+                <option>Senegal</option>
+                <option>Serbia</option>
+                <option>Seychelles</option>
+                <option>Sierra Leone</option>
+                <option>Singapore</option>
+                <option>Slovakia</option>
+                <option>Slovenia</option>
+                <option>Solomon Islands</option>
+                <option>Somalia</option>
+                <option>South Africa</option>
+                <option>South Sudan</option>
+                <option>Spain</option>
+                <option>Sri Lanka</option>
+                <option>Sudan</option>
+                <option>Suriname</option>
+                <option>Sweden</option>
+                <option>Switzerland</option>
+                <option>Syria</option>
+                <option>Taiwan</option>
+                <option>Tajikistan</option>
+                <option>Tanzania</option>
+                <option>Thailand</option>
+                <option>Timor-Leste</option>
+                <option>Togo</option>
+                <option>Tonga</option>
+                <option>Trinidad and Tobago</option>
+                <option>Tunisia</option>
+                <option>Turkey</option>
+                <option>Turkmenistan</option>
+                <option>Tuvalu</option>
+                <option>Uganda</option>
+                <option>Ukraine</option>
+                <option>United Arab Emirates</option>
+                <option>United Kingdom</option>
+                <option>United States</option>
+                <option>Uruguay</option>
+                <option>Uzbekistan</option>
+                <option>Vanuatu</option>
+                <option>Vatican City</option>
+                <option>Venezuela</option>
+                <option>Vietnam</option>
+                <option>Yemen</option>
+                <option>Zambia</option>
+                <option>Zimbabwe</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-data">
+            <input
+              placeholder="Enter postal code"
+              type="text"
+              name="zipcode"
+              id="zipcode"
+            />
+          </div>
+        </div>
+        <!--insurance info-->
+        <div class="form-data">
+          <label>Insurance Information</label>
+          <div class="select-box">
+            <select>
+              <option hidden>Select the Life Insurance</option>
+              <option>Term Life Insurance</option>
+              <option>Whole Life Insurance</option>
+              <option>Universal Life Insurance</option>
+              <option>Variable Life Insurance</option>
+              <option value="5">Credit Life Insurance</option>
+              <option value="6">Burial insurance/funeral insurance</option>
+              <option value="7">
+                Survivorship Life Insurance/Joint Life Insurance
+              </option>
+              <option value="8">Mortgage Life insurance</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-data">
+          <input
+            type="number"
+            id="user_NoOfplan"
+            name="user_NoOfplan"
+            placeholder="How much life insurance do you want us to quote?"
+            required
+          />
+        </div>
+
+        <div class="form-data">
+          <textarea
+            id="health_issue"
+            name="health_issue"
+            placeholder="Describe health issues (if any)"
+            cols="30"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="radio-box">
+          <label>Martial Status</label>
+          <div class="radio-option">
+            <div class="radio-value">
+              <input
+                type="radio"
+                id="check-single"
+                name="martial-status"
+              /><label for="check-signal">Single</label>
+            </div>
+
+            <div class="radio-value">
+              <input
+                type="radio"
+                id="check-married"
+                name="martial-status"
+              /><label for="check-married">Married</label>
+            </div>
+
+            <div class="radio-value">
+              <input
+                type="radio"
+                id="check-divorced"
+                name="martial-status"
+              /><label for="check-divorced">Divorced</label>
+            </div>
+
+            <div class="radio-value">
+              <input
+                type="radio"
+                id="check-widowed"
+                name="martial-status"
+              /><label for="check-widowed">Widowed</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-data">
+          <div class="select-box">
+            <select>
+              <option hidden>
+                Are you planning on to cancel your life insurance?
+              </option>
+              <option>No</option>
+              <option>Yes</option>
+            </select>
+          </div>
+        </div>
+        <div class="column">
+          <div class="form-data">
+            <input
+              type="text"
+              id="user_passport"
+              name="user_passport"
+              placeholder="Passport Number"
+              required
+            />
+          </div>
+          <div class="form-data">
+            <input
+              type="date"
+              id="user_passportexp"
+              name="user_passportexp"
+              placeholder="Passport Number Expiry Date"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="radio-box">
+          <label
+            >Total number of life insurance policies on you right now?</label
+          >
+          <div class="radio-option">
+            <div class="radio-value">
+              <input type="radio" name="insurance" value="1-5" /><label
+                for="1-5"
+                >1-5</label
+              >
+            </div>
+
+            <div class="radio-value">
+              <input type="radio" id="6-10" name="insurance" /><label for="6-10"
+                >6-10</label
+              >
+            </div>
+
+            <div class="radio-value">
+              <input type="radio" id="11-15" name="insurance" /><label
+                for="11-15"
+                >11-15</label
+              >
+            </div>
+
+            <div class="radio-value">
+              <input type="radio" id="other" name="insurance" /><label
+                for="other"
+                >Others</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="form-data">
+          <button type="submit" value="Submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

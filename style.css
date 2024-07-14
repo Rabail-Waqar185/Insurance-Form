@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+body {
+  min-height: 100vh;
+  padding: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("family.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.container header {
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tab-buttons a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: transparent;
+  color: #ececec;
+  border: 2px solid white;
+  padding: 10px;
+  cursor: pointer;
+  flex: 1;
+  transition: all 0.2s ease;
+}
+.tab-buttons a:hover {
+  color: black;
+  background-color: white;
+}
+.form .form-data {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-data label {
+  color: #ececec;
+}
+
+.form :where(.form-data input, .form-data textarea, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #707070;
+  font-size: 1rem;
+}
+#health_issue {
+  padding-top: 10px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  background: transparent;
+  color: #707070;
+  border: none;
+  outline: none;
+  transition: 200ms;
+}
+.form .column {
+  display: flex;
+  column-gap: 5px;
+}
+
+.radio-box label {
+  color: #ececec;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 8px;
+}
+.form :where(.radio-option, .radio-value) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 60px;
+}
+.form .radio-value {
+  column-gap: 5px;
+  margin-bottom: 20px;
+}
+.form :where(.radio-value input, .radio-value label) {
+  cursor: pointer;
+}
+.radio-value input {
+  accent-color: black;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 30px;
+  transition: all 0.2s ease;
+}
+
+.form button:hover {
+  background-color: white;
+  color: black;
+}
+
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
